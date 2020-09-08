@@ -55,6 +55,8 @@ Rscript hw2_yourID.R --target female --input examples/method2.csv examples/metho
 
 ## Scores
 
+**Please use R version 3.6.3**
+
 5 testing data
 
 ```R
