@@ -1,4 +1,4 @@
-# hw2 :  Evalute a mode for predicting loans that are about to default
+# hw2 :  evalute a mode for predicting loans that are about to default
 
 ### Name: [your name in Chinese or English]
 ### Student ID: [your student ID]
