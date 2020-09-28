@@ -1,4 +1,4 @@
-# hw2
+# hw2 :  Evalute a mode for predicting loans that are about to default
 
 ### Name: [your name in Chinese or English]
 ### Student ID: [your student ID]
@@ -6,7 +6,7 @@
 ## cmd
 
 ```R
-Rscript hw2_yourID.R --target male/female --input meth1 meth2 ... methx --output result.csv
+Rscript hw2_yourID.R --target bad/good --input meth1 meth2 ... methx --output result.csv
 
 ```
 
@@ -14,43 +14,42 @@ Rscript hw2_yourID.R --target male/female --input meth1 meth2 ... methx --output
 * Positive case defined by “--target” option
 * Find out which method contains the max
 * yourID should be your student ID number, i.e., hw2_106769999.R
-* You should write your own function to calculate sensitivity, specificity and F1 except AUC which could be done by ROCR package.
-* AUC is calculated based on the curve True Positive Rate vs False Positive Rate.
+* You should write your own function to calculate metrics.
 * hw2_example.R is for reference only.
 
 ## Inputs
 
 * examples/method1.csv
-* the last column, pred.score, is the predicted probability of "Male".
+* the last column, pred.score, is the predicted probability of "bad loan".
 
 
-persons,prediction,reference,pred.score
+persons,reference,pred.score
 
-person1,male,male,0.807018548483029
+person1,bad,0.807018548483029
 
-person2,male,male,0.740809247596189
+person2,bad,0.740809247596189
 
-person3,female,male,0.0944965328089893
+person3,bad,0.0944965328089893
 
-person4,female,female,0.148418645840138
+person4,good,0.148418645840138
 
 ## Output
 * examples/output1.csv
 
-method,sensitivity,specificity,F1,AUC
+method,sensitivity,specificity,F1,R<sup>2</sup>,logLikelihood
 
-method1,0.91,0.96,0.85,0.79
+method1,0.91,0.96,0.85,0.79,-132
 
-method2,0.99,0.98,0.86,0.70
+method2,0.99,0.98,0.86,0.70,-112
 
-highest,method2,method2,method2,method1
+highest,method2,method2,method2,method1,method2
 
 ## Examples
 
 ```R
-Rscript hw2_yourID.R --target male --input examples/method1.csv examples/method2.csv --output examples/output1.csv
-Rscript hw2_yourID.R --target male --input examples/method1.csv examples/method3.csv examples/method5.csv --output examples/output2.csv
-Rscript hw2_yourID.R --target female --input examples/method2.csv examples/method4.csv examples/method6.csv --output examples/output3.csv
+Rscript hw2_yourID.R --target bad --input examples/method1.csv examples/method2.csv --output examples/output1.csv
+Rscript hw2_yourID.R --target bad --input examples/method1.csv examples/method3.csv examples/method5.csv --output examples/output2.csv
+Rscript hw2_yourID.R --target good --input examples/method2.csv examples/method4.csv examples/method6.csv --output examples/output3.csv
 ```
 
 ## Scores
