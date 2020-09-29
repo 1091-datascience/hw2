@@ -46,6 +46,10 @@ method2,0.99,0.98,0.86,-112,0.70
 
 max,method2,method2,method2,method2,method1
 
+## Null model
+* as being “the obvious guess”
+* please use the null model which always return the proportion of "bad" loans
+
 ## Examples
 
 ```R
