@@ -44,7 +44,7 @@ method1,0.91,0.96,0.85,-132,0.79
 
 method2,0.99,0.98,0.86,-112,0.70
 
-max,method2,method2,method2,method1,method2
+max,method2,method2,method2,method2,method1
 
 ## Examples
 
