@@ -35,7 +35,7 @@ person4,good,0.148418645840138
 ## Output
 * You should write your own function to calculate metrics.
 * Find out which method contains the max
-* pseudo R<sup>2</sup> = 1 - deviance(model)/deviance(null model) for *S*=0, where null model predicts the probability of inputs as a constant number = the proportion of the positive cases
+* pseudo R<sup>2</sup> = 1 - deviance(model)/deviance(null model) for *S*=0, where null model predicts the probability of inputs as a constant number = the proportion of the bad loan cases
 * examples/output1.csv
 
 method,sensitivity,specificity,F1,logLikelihood,pseudoR2
