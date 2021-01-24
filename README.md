@@ -35,7 +35,7 @@ person4,good,0.148418645840138
 ## Output
 * You should write your own function to calculate metrics.
 * Find out which method contains the max
-* pseudo R<sup>2</sup> = 1 - deviance(model)/deviance(null model) for *S*=0, where null model predicts the probability of inputs as a constant number = the proportion of the bad loan cases
+* pseudo *R*<sup>2</sup> = 1 - deviance(model)/deviance(null model) for *S*=0, where null model predicts the probability of inputs as a constant number = the proportion of the bad loan cases
 * examples/output1.csv
 
 method,sensitivity,specificity,F1,logLikelihood,pseudoR2
@@ -72,8 +72,8 @@ Otherwise, your code will fail due to fixed path problem.
 
 - Output format without “: 3 points
 - Number in 2 digitals : 3 points
-- Set format without file path: 4 points
+- Concise file name without path: 4 points
 
 ## Penalty
-- can not detect missing --input/--ouptut flag 
+- Can not detect missing --input/--ouptut flag
 - -2 points of each problem
